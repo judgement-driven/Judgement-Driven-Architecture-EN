@@ -1,420 +1,216 @@
-# Judgement-Driven Architecture
+# Judgement-Driven Architecture (JDA)
 
-🌐 **Languages**
+> Preserve Judgement. Organizations become smarter.  
+> Companies are driven not by data, but by judgement.
 
--   English
--   Japanese (Original):
-    https://github.com/judgement-driven/Judgement-Driven-Architecture
+---
 
-> **Preserve decisions. Organizations become smarter.**\
-> **Companies are driven not by data, but by decisions.**
+## One-line Definition
 
-**One-line definition**
+JDA is an architecture that extracts, evaluates, logs, and learns from organizational judgements to continuously improve decision-making capability.
 
-Judgement-Driven Architecture (JDA) is a theory for designing **a
-decision infrastructure where organizational judgements are structured
-as logs and continuously learned from by both humans and AI.**
+---
 
-------------------------------------------------------------------------
+## Why JDA
 
-# Why This Theory Was Created
+Most business processes are described as flows.
 
-Many business activities are described as flows.
+However, real work does not follow clean flows.
 
-Business processes, process diagrams, workflows, and many other formats
-are used to organize work.
+Work is driven by **judgements**:
 
-However, real work does not flow cleanly according to those diagrams.
+- Should we proceed with this deal?
+- Should we allow this exception?
+- Which option should we prioritize?
 
-**In reality, work constantly changes direction based on decisions.**
+Organizations accumulate:
 
-For example:
+- Data (sales, transactions)
+- Behavior logs (clicks, actions)
 
--   Should we proceed with this deal?
--   Should we allow this exception?
--   Which option should we prioritize?
+But they do NOT accumulate:
 
-Business operations advance through the accumulation of such decisions.
+- Judgements
+- Reasons behind decisions
+- Alternatives considered
 
-However, these decisions usually have the following problems:
+---
 
--   They become dependent on individuals
--   The reasoning behind them is not recorded
--   Their validity is not evaluated later
--   AI cannot use them
+## AI Era Context
 
-Companies already possess large amounts of data.
+AI models will become commoditized.
 
-### Fact Data
+Competitive advantage will shift from:
 
--   Sales
--   Orders
--   Product information
+- Which AI you use
 
-### Behavioral Data
+to:
 
--   Clicks
--   Views
--   Purchases
+- What data you train it on
 
-However, there is another critical type of data in organizations:
+---
 
-> **Decision Data**
+## Key Insight
 
-For example, in sales:
+The most critical proprietary data is:
 
--   Prioritized Company A
--   Dropped this deal
--   Proceeded with this proposal
+> **Judgement Data**
 
-Such decisions occur every day.
+---
 
-But usually the following are not recorded:
+## What is JDA
 
--   Why the decision was made
--   What information was considered
--   Whether the decision was correct
+JDA is a design theory that treats **judgement as the unit of learning**.
 
-Judgement-Driven Architecture (JDA) is a theory that designs a structure
-where
+It is NOT:
 
-> **decisions are treated as states, stored as logs, and made
-> learnable.**
+- A process improvement method
+- An AI implementation framework
 
-------------------------------------------------------------------------
+It IS:
 
-# What is JDA
+> A structure where humans and AI continuously learn from decisions.
 
-Judgement-Driven Architecture (JDA) is
+---
 
-> **a design theory that structures decisions as units of learning.**
+## Definition of Judgement
 
-JDA is not:
+Judgement is:
 
--   A simple business process improvement method
--   An AI implementation framework
--   An organizational transformation theory
+> The act of fixing a state among multiple possible futures.
 
-Instead, JDA is
+Each judgement has four dimensions:
 
-> **a theory for designing systems where humans and AI continuously
-> learn from decisions.**
+- Proceed
+- Validity
+- Accountability
+- Venture
 
-------------------------------------------------------------------------
+---
 
-# Terms and Abbreviations
+## Venture Judgement
 
-  Abbreviation   Meaning
-  -------------- ---------------------------------
-  JDA            Judgement-Driven Architecture
-  JP             Judgement Point
-  JSC            Judgement State Chart
-  JULIA          Judgement Log Impact Assessment
-  JDC            Judgement Design Canvas
-  JLog           Judgement Log
-  VLog           Validity Log
+A judgement that intentionally takes risk to create non-linear value.
 
-------------------------------------------------------------------------
+It is not limited to creating new markets.
 
-# Definition of Judgement
+Examples:
 
-## What is a Judgement
+- Amazon: AWS
+- Nintendo: Switch
+- Toyota: Prius
 
-A judgement is
+---
 
-**an act that fixes a state.**
-
-Every judgement has four aspects:
-
--   Proceed
--   Validity
--   Accountability
--   Venture
-
-------------------------------------------------------------------------
-
-## What is Fixing a State
-
-Fixing a state means that a responsible actor locks a state and
-constrains the next transition.
-
-In other words,
-
-> **A judgement is the act of narrowing future possibilities to one
-> path.**
-
-------------------------------------------------------------------------
-
-## What is a Log
-
-A log is the record of that fixation.
-
-It records:
-
--   Who made the decision
--   What decision was made
--   Why the decision was made
-
-------------------------------------------------------------------------
-
-## What is Learning
-
-Learning means evaluating the validity of those past decisions and
-reflecting them into future decision criteria.
-
-------------------------------------------------------------------------
-
-# Venture Judgement
-
-Proceed / Validity / Accountability provide a structure for safe
-decision cycles.
-
-However, organizations also need
-
-> **decisions that select outside the existing distribution.**
-
-A Venture Judgement is
-
-> **a decision that intentionally accepts risk because the potential
-> upside is discontinuously large.**
-
-Prerequisites:
-
--   Defined acceptable loss
--   Defined exit criteria
--   Designed number of trials
--   Clear responsibility
--   Logged reasoning
-
-------------------------------------------------------------------------
-
-## Examples of Venture Judgements
-
-### Executive Level
-
--   Nintendo: Famicom (NES)
--   Sony: Walkman
-
-### Operational Level
-
--   Experimental proposal to a new client
--   Creative approach that breaks the standard playbook
--   Small-scale experimental project
-
-------------------------------------------------------------------------
-
-# JDA Design Principles
-
-1.  Do not change the existing flow
-2.  Treat decisions as units of learning
-3.  AI presents decision materials
-4.  Allow venture judgements
-5.  Decision logs create learning cycles
-
-------------------------------------------------------------------------
-
-# Overall Structure of JDA
+## JDA v1.1 Structure
 
 ``` mermaid
-flowchart LR
-    Domain[Domain Definition]
-    Extract[Judgement Extraction]
-    Prioritize[Prioritization]
-    Design[Judgement Design]
-    Log[Log Design]
-    Implement[Implementation]
-    Learn[Learning]
-
-    Domain --> Extract --> Prioritize --> Design --> Log --> Implement --> Learn
-    Learn --> Design
+Discovery → Investment → Learning
 ```
 
-------------------------------------------------------------------------
+- Discovery: Identify judgement structure
+- Investment: Decide where to invest (JULIA)
+- Learning: Log and improve judgements
 
-# Phase Overview
+---
 
-JDA is implemented through the following phases.
+## Phases
 
-## Phase 0 --- Establish the Decision Foundation
+### Phase 0: Foundation
 
--   Define decision domain boundaries
--   Extract business journeys
--   Do not optimize yet
--   Do not design a "ToBe" process
+- Define domain
+- Understand business
+- No To-Be design
 
-------------------------------------------------------------------------
+### Phase 1: Discovery
 
-## Phase 1 --- Judgement Extraction
+- Identify Judgement Chain
+- Extract Judgement Points
 
--   Decompose business journeys
--   Enumerate Judgement Points (JP)
--   Define Judgement State Charts (JSC)
+### Phase 2: Investment (JULIA)
 
-------------------------------------------------------------------------
+- Estimate Judgement ROI
+- Evaluate impact
+- Prioritize
 
-## Phase 2 --- Prioritization (JULIA)
+### Phase 3: Design
 
-Evaluation axes:
+- JSC (state transitions)
+- JDC (judgement design)
 
--   Impact
--   Frequency
--   Individual dependency
--   Learning value
+### Phase 4: Logging
 
-------------------------------------------------------------------------
+- Inputs
+- Options
+- Decisions
+- Reasons
+- Validity
 
-## Phase 3 --- Judgement Design (JDC)
+### Phase 5: Implementation
 
-Define:
+- DB / UI / Workflow
+- AI integration
 
--   Human decision
--   AI-supported decision
--   AI-substituted decision
--   Venture judgement
--   Responsible actor
--   Escalation rules
+### Phase 6: Learning
 
-------------------------------------------------------------------------
+- Review validity
+- Improve decisions
+- Update models
 
-## Phase 4 --- Log Design
+---
 
-Define logs for:
+## Judgement ROI
 
--   Decision materials
--   Decision options
--   Decision results
--   Decision reasoning
--   Validity evaluation
+Judgement ROI = Frequency × Impact × Improvement Rate − Cost
 
-------------------------------------------------------------------------
+---
 
-## Phase 5 --- Implementation
+## JULIA
 
--   DB / JSON schema design
--   UI design
--   Workflow integration
--   AI integration (LLM / RAG / SLM)
+Judgement Log Impact Assessment
 
-------------------------------------------------------------------------
+A framework to determine:
 
-## Phase 6 --- Learning
+> Which judgements should be logged and improved first
 
--   Validity review
--   Decision trend analysis
--   Venture review
--   Criteria updates
+---
 
-------------------------------------------------------------------------
+## Learning Loop
 
-# Decision Log Loop (JDA Learning Loop)
+Data → AI → Options → Human → JLog → Action → Result → VLog → Learning
 
-``` mermaid
-flowchart LR
-    DATA[Data]
-    AI[AI organizes materials]
-    OPTION[Decision options]
-    HUMAN[Human decision]
-    JLOG[Judgement Log]
-    ACTION[Action]
-    RESULT[Result]
-    VLOG[Validity Log]
-    LEARN[Learning]
+---
 
-    DATA --> AI
-    AI --> OPTION
-    OPTION --> HUMAN
-    HUMAN --> JLOG
-    JLOG --> ACTION
-    ACTION --> RESULT
-    RESULT --> VLOG
-    VLOG --> LEARN
-    LEARN --> AI
-```
+## Positioning
 
-------------------------------------------------------------------------
+| Domain | Focus |
+| ------ | ------ |
+| BI | Data |
+| BPM | Process |
+| AI | Model |
+| JDA | Judgement |
 
-# Minimal Implementation Example
+---
 
-``` python
-options = AI.propose_options(context)
+## AI Relationship
 
-decision = human.select(options)
+JDA is not AI implementation.
 
-JLog.save(
-    context=context,
-    decision=decision,
-    options=options
-)
+It is:
 
-result = observe_result()
+> The structure that makes AI effective in decision-making.
 
-VLog.save(
-    decision=decision,
-    result=result
-)
+---
 
-AI.learn(JLog, VLog)
-```
+## Long-term Vision
 
-------------------------------------------------------------------------
+Enterprise World Model
 
-# Positioning of JDA
+A shared model between humans and AI built from judgement logs.
 
-  Field                 Focus                     What is Stored
-  --------------------- ------------------------- -------------------
-  BI                    Fact Data                 Sales / Logs
-  Process Improvement   Business Flow             Procedures
-  AI                    Prediction / Generation   Models
-  **JDA**               **Decision Making**       **Decision Logs**
+---
 
-JDA operates in
-
-> **the domain of decisions.**
-
-------------------------------------------------------------------------
-
-# Relationship with AI
-
-JDA is not an AI adoption framework.
-
-Instead, it is
-
-> **a theory for designing a structure where AI can naturally
-> integrate.**
-
-AI roles:
-
--   Collect decision materials
--   Organize information
--   Generate options
--   Optimize
-
-Human roles:
-
--   Final judgement
--   Venture judgement
--   Responsibility judgement
-
-------------------------------------------------------------------------
-
-# Long-Term Vision
-
-The long-term goal of JDA is to accumulate organizational decision logs
-and allow them to be shared by both organizations and AI.
-
-This leads to the creation of a
-
-> **Corporate World Model**
-
-This enables:
-
--   Accelerated organizational learning
--   AI decision support
--   Preservation of corporate culture
-
-------------------------------------------------------------------------
-
-# License
+## License
 
 Copyright (c) 2026 Shun Takeda (B-AS)
 
@@ -422,11 +218,11 @@ This project is released under the\
 **Creative Commons Attribution 4.0 International License (CC BY 4.0).**
 
 Full license text:\
-https://creativecommons.org/licenses/by/4.0/
+<https://creativecommons.org/licenses/by/4.0/>
 
-------------------------------------------------------------------------
+---
 
-# Citation
+## Citation
 
 If you use this theory in research, articles, or publications, please
 cite:
@@ -434,11 +230,9 @@ cite:
 Judgement-Driven Architecture\
 Author: Shun Takeda (B-AS)\
 GitHub Repository\
-https://github.com/judgement-driven/Judgement-Driven-Architecture
+<https://github.com/judgement-driven/Judgement-Driven-Architecture>
 
-------------------------------------------------------------------------
-
-## BibTeX
+### BibTeX
 
 ``` bibtex
 @misc{JDA2026,
