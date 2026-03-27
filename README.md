@@ -104,8 +104,14 @@ Examples:
 
 ## JDA v1.1 Structure
 
-``` mermaid
-Discovery → Investment → Learning
+```mermaid
+flowchart LR
+    D[Discovery]
+    I[Investment]
+    L[Learning]
+
+    D --> I --> L
+    L --> D
 ```
 
 - Discovery: Identify judgement structure
