@@ -6,90 +6,107 @@
 
 ## 1. Introduction
 
-In recent years, advances in AI have significantly changed how organizations approach decision-making.  
-However, many AI initiatives face common problems:
+In recent years, the rapid advancement of AI has begun to fundamentally transform how decisions are made within organizations.  
+However, many AI initiatives suffer from the following issues:
 
-- Unclear where AI should be applied  
-- Proofs of concept (PoCs) do not reach production  
-- ROI is difficult to explain  
-- AI adoption becomes an end in itself  
+- Uncertainty about where AI should be applied  
+- Proliferation of PoCs (Proofs of Concept) without production deployment  
+- Unclear ROI, making investment decisions difficult  
+- AI adoption becoming an end in itself  
 
-The root cause of these issues lies in the unit of application.
+The root cause of these problems lies in the unit of application.
 
 Most AI initiatives are designed around business processes:
 
-Business → Automation
+```text
+Process → Automation
+```
 
-However, real organizational activity follows a different structure:
+However, actual enterprise activity follows a different structure:
 
+```text
 Information → Judgement → Action → Result
+```
 
-Actions determine outcomes, but actions themselves are determined by judgements.
+While outcomes are produced by actions,  
+those actions are determined by judgements.
 
-Therefore, the fundamental unit of an organization is not “business process” but “judgement”.
+Therefore, the fundamental unit of enterprise activity is not the process, but the judgement.
+
+---
 
 Furthermore, in the AI era, AI models themselves are becoming commoditized.  
-Competitive advantage will shift from:
+Competitive advantage no longer depends on:
 
-- Which AI you use  
+- Which AI is used  
 
-to:
+but rather on:
 
-- What you make AI learn  
+- What is taught to the AI  
 
-This leads to a critical problem:
+---
 
-Organizations do not know what data they should collect and learn from.
+However, a critical problem remains:
 
-While proprietary data is widely discussed, the following are not clearly defined:
+Organizations have not defined what should be learned.
+
+While the importance of proprietary data is widely recognized,  
+the following remain unclear:
 
 - What data should be collected  
 - How it should be structured  
 - How it should be used for learning  
 
-This research proposes the following hypothesis:
+---
 
-> Proprietary data in the AI era is “judgement data”.
+This work proposes the following hypothesis:
 
-Judgement-Driven Architecture (JDA) is an architecture that extracts, structures, and logs judgements, enabling both humans and AI to learn from them.
+> Proprietary data in the AI era is judgement data.
+
+Judgement-Driven Architecture (JDA) is an architecture that extracts, structures, logs, and enables learning from organizational judgements for both humans and AI.
 
 ---
 
-## 2. Core Hypothesis
+## 2. Core Hypotheses
 
 JDA is based on the following hypotheses.
 
-### Hypothesis 1: Organizations are driven by judgements, not data
+---
 
-While data describes organizational activity,  
-it is judgement that actually changes the state of the organization.
+### Hypothesis 1: Enterprises operate on judgements, not data
 
-Data is only input; judgement is the control unit.
+Enterprise activities are described by data,  
+but what actually changes the state of the enterprise is judgement.
+
+Data is merely input to judgement.  
+The control unit of the enterprise is judgement.
 
 ---
 
-### Hypothesis 2: Organizational outcomes depend on judgement quality
+### Hypothesis 2: Organizational performance is determined by the quality of judgement
 
-Actions are selected through judgement.  
-Therefore, outcomes depend not on actions themselves but on the quality of the underlying judgements.
+Actions are selected through judgement.
+
+Therefore, organizational performance depends not on actions themselves,  
+but on the quality of the underlying judgements.
 
 ---
 
 ### Hypothesis 3: Organizational culture is the accumulation of judgements
 
-Organizational culture is not defined by formal rules,  
+Organizational culture is not defined by explicit rules,  
 but by the accumulation of daily decision patterns.
 
-Repeated judgements shape how an organization behaves.
+Repeated judgements shape behavioral norms.
 
 ---
 
 ### Hypothesis 4: Judgement logs enable learning for both organizations and AI
 
-Traditional systems record:
+Traditional enterprise systems record:
 
-- What happened (data)  
-- What was done (actions)  
+- Data (what happened)  
+- Actions (what was done)  
 
 But they do not record:
 
@@ -109,15 +126,17 @@ By logging judgements:
 
 ## 3. Definition of Judgement
 
-Judgement is:
+Judgement is defined as:
 
-The act of selecting and fixing one state among multiple possible futures.
+> The act of selecting and fixing one state from multiple possible futures
 
-### Properties
+---
+
+### Characteristics
 
 - Determines state transitions  
-- Constrains subsequent actions  
-- Has a responsible actor  
+- Constrains actions  
+- Has an accountable actor  
 
 ---
 
@@ -128,27 +147,31 @@ The act of selecting and fixing one state among multiple possible futures.
 - Accountability  
 - Venture  
 
-Venture is not a type of judgement, but a dimension representing exploration.
+Venture is not a type of judgement, but a continuous axis of exploration.
 
 ---
 
 ## 4. Architecture
 
+```text
 Discovery → Investment → Learning
+```
 
-- Discovery: Identify judgement structures  
-- Investment: Evaluate judgement value  
-- Learning: Design, log, and learn  
+- Discovery: Identifying judgement structures  
+- Investment: Evaluating judgement value  
+- Learning: Designing, logging, and improving  
 
 ---
 
 ## 5. Judgement Structure
 
+```text
 Judgement Chain  
 └ Judgement Journey  
    └ Judgement Point  
+```
 
-Organizations should be understood as structures of judgements rather than processes.
+Enterprise activity is not a process, but a structure of judgements.
 
 ---
 
@@ -156,16 +179,17 @@ Organizations should be understood as structures of judgements rather than proce
 
 ### Judgement ROI
 
+```text
 ROI = Frequency × Impact × Improvement Rate − Cost
+```
 
 ---
 
 ### JULIA
 
-JULIA is a judgement investment evaluation framework.
+JULIA is a framework for evaluating judgement investment.
 
-It extends traditional ROI-based evaluation by incorporating multiple dimensions.
-
+It extends traditional ROI-based evaluation by incorporating multiple dimensions.  
 This structure is inspired by the Balanced Scorecard (BSC).
 
 ---
@@ -177,60 +201,137 @@ This structure is inspired by the Balanced Scorecard (BSC).
 - Automation Potential (Internal Process)  
 - Learning Value (Learning)  
 
-JULIA incorporates ROI while enabling multi-dimensional evaluation.
+JULIA evaluates judgement value in a multi-dimensional manner while incorporating ROI.
 
 ---
 
 ## 7. Learning System
 
-### JSC (Judgement State Chart)
+### JSC
 
-State transition model driven by judgements.
+Judgement State Chart
 
----
+### JDC
 
-### JDC (Judgement Design Canvas)
-
-Framework for designing judgements.
-
----
+Judgement Design Canvas
 
 ### JLog
 
-Judgement log (decision, context, reasoning).
-
----
+Judgement Log
 
 ### VLog
 
-Validity log (post-evaluation of judgement).
+Validation Log
 
 ---
 
 ### Lifecycle
 
+```text
 Before → During → After
+```
 
 ---
 
 ### Learning Loop
 
+```text
 Data → AI → Options → Human → JLog → Action → Result → VLog → Learning
+```
 
 ---
 
 ## 8. AI Implementation
 
-Failures in AI adoption stem from incorrect unit selection.
+### 8.1 Problem of AI Adoption
 
-Business → Automation (incorrect)  
-Judgement → Improvement (correct)  
+Failures in AI adoption are caused by incorrect units of application.
 
-AI can reproduce actions but cannot learn decision-making.
+```text
+Process → Automation (Incorrect)
+Judgement → Improvement (Correct)
+```
 
-JDA resolves this through:
+AI can reproduce actions, but cannot learn decision-making.
 
+---
+
+### 8.2 Role of JDA
+
+JDA resolves this problem through the following structure:
+
+```text
 Judgement Extraction → JULIA → Design → Logging → Learning
+```
+
+---
+
+### 8.3 AI Agent Role Classification
+
+In JDA, AI agents are classified into two types.
+
+---
+
+#### Process AI Agents
+
+**Role:**
+
+- Automate the progression of workflows  
+- Execute and orchestrate tasks  
+- Proceed to the next step based on judgement results  
+
+**Target:**
+
+- Execution of routine operations  
+- Data collection and organization  
+- Notification and integration processes  
+
+---
+
+#### Judgement AI Agents
+
+**Role:**
+
+- Collect and structure decision inputs  
+- Generate and present options  
+- Retrieve similar past judgements from JLog  
+- Analyze judgement logs  
+
+**Target:**
+
+- Decision support  
+- Option generation  
+- Pattern analysis  
+
+---
+
+### 8.4 Relationship
+
+Process agents and judgement agents interact as follows:
+
+```text
+Process AI Agent (What to do)
+↓
+Judgement AI Agent (How to decide)
+↓
+Human Judgement (Final decision)
+↓
+JLog (Recording)
+↓
+Learning (Why it was decided)
+```
+
+---
+
+### 8.5 Connection to Enterprise World Model
+
+Through continuous cycles of this structure,  
+an enterprise-specific decision model (Enterprise World Model) is formed.
+
+Through accumulation of judgement logs:
+
+- Process agents learn workflow optimization  
+- Judgement agents improve decision accuracy  
 
 ---
 
@@ -241,20 +342,20 @@ Judgement Extraction → JULIA → Design → Logging → Learning
 - DDD: Model  
 - KM: Knowledge  
 
-JDA treats decision-making as a first-class system.
+JDA treats decision-making as a first-class architectural concern.
 
 ---
 
 ## 10. Venture Judgement
 
-Venture represents the exploration dimension of judgement.  
-All judgements exist on a continuous spectrum of exploration.
+Venture is an axis of exploration,  
+and all judgements exist on a continuous spectrum.
 
 ---
 
 ## 11. Long-term Vision
 
-Construction of an Enterprise World Model.
+Construction of the Enterprise World Model
 
 ---
 
@@ -262,17 +363,20 @@ Construction of an Enterprise World Model.
 
 JDA is an architecture that:
 
-Extracts judgements  
-Evaluates judgements  
-Logs judgements  
-Learns from judgements  
+- Extracts judgements  
+- Evaluates judgements  
+- Logs judgements  
+- Learns from judgements  
 
-to continuously improve organizational decision-making capability.
+to evolve the decision-making capability of organizations.
+
+---
 
 ## License & Citation
 
-Copyright (c) 2026 Shun Takeda（B-AS）  
+Copyright (c) 2026 Shun Takeda (B-AS)  
 CC BY 4.0 — <https://creativecommons.org/licenses/by/4.0/>
 
-Citation : Takeda, Shun. Judgement-Driven Architecture. B-AS, 2026.  
+Citation:  
+Takeda, Shun. *Judgement-Driven Architecture*. B-AS, 2026.  
 <https://github.com/judgement-driven/Judgement-Driven-Architecture>
