@@ -362,12 +362,35 @@ rather than hardcoded business logic.
 The JDA Learning Cycle enables staged organizational judgement learning.
 
 ```text
+Learning Foundation
+↓
 Judgement Material Learning
 ↓
 Judgement Reproduction Learning
 ↓
 Judgement Delegation
 ```
+
+---
+
+## Stage0: Learning Foundation
+
+Before learning can begin, a foundation for validity evaluation must be established.
+
+The goal of Stage0 is not to improve judgement models.  
+The goal is to enable continuous and automatic VLog collection.
+
+```text
+JP execution
+↓
+State confirmation (based on JSC)
+↓
+Subsequent state tracking
+↓
+VLog generation
+```
+
+Stage0 is the prerequisite for all subsequent learning stages.
 
 ---
 
