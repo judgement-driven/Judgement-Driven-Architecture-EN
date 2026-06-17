@@ -333,7 +333,7 @@ Judgement Injection is a key implementation concept in JDA v1.6.
 
 Traditional business systems often embed judgement logic directly into code or UI.
 
-JDA instead treats JP as a managed definition injected into an execution harness.
+JDA instead treats JP as a managed definition injected into a Judgement Harness.
 
 ```text
 JP Definition
@@ -527,7 +527,7 @@ Design and implement the JDA execution infrastructure.
 
 Key elements:
 
-- Harness
+- Judgement Harness
 - execute_jp
 - State management
 - Proposal / Case
@@ -650,6 +650,7 @@ JDA Core v1.6 and JDA Method v1.6 are currently organized around:
 - Judgement as state transition
 - Business Journey as JP discovery scope
 - JP as reusable judgement asset
+- Judgement Harness
 - Judgement Injection
 - JLog / VLog
 - Judgement Slice Implementation
