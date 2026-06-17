@@ -443,12 +443,25 @@ rather than hardcoded logic.
 JDA learning proceeds in stages.
 
 ```text
+Validity Capture
+↓
 Judgement Material Learning
 ↓
 Judgement Reproduction Learning
 ↓
 Judgement Delegation
 ```
+
+---
+
+## Stage0 — Validity Capture
+
+Before learning can begin, a foundation for validity evaluation must be established.
+
+The goal of Stage0 is not to improve judgement models.
+The goal is to enable continuous and automatic VLog collection.
+
+Stage0 is the prerequisite for all subsequent learning stages.
 
 ---
 
