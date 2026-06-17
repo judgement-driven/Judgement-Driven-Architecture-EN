@@ -477,14 +477,15 @@ Main outputs:
 
 # Phase2 JULIA
 
-JULIA (Judgement Log Impact Assessment) evaluates extracted JP and determines which judgements should be prioritized.
+JULIA (Judgement Scorecard) evaluates extracted JPs and determines which judgements should be prioritized.
 
-Evaluation dimensions:
+The name JULIA comes from the initials of its five evaluation dimensions:
 
-- ROI
-- Business Impact
-- Automation Potential
-- Learning Value
+- J: Judgement Financial Impact
+- U: Urgency & Frequency
+- L: Latency
+- I: Influence Scope
+- A: Adaptive / Learning Value
 
 Phase2 determines:
 

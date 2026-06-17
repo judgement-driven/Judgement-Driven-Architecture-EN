@@ -243,7 +243,56 @@ A JP changes future state and future organizational behavior.
 
 ---
 
-# 8. Judgement Journey (JJ)
+# 8. Judgement ROI and JULIA
+
+JDA designs around:
+
+> Which judgements deserve investment
+
+---
+
+## 8.1 Judgement Investment
+
+JDA prioritizes:
+
+> Which judgements to invest in
+
+JULIA determines investment priority for judgement improvement, implementation, and learning.
+
+---
+
+## 8.2 JULIA
+
+JULIA (Judgement Scorecard) evaluates JP importance and determines which judgements should be prioritized for improvement, implementation, and learning.
+
+The name JULIA comes from the initials of its five evaluation dimensions.
+
+JDA does not treat the following as equivalent:
+
+- discovered JP
+- JP selected for design
+- JP selected for implementation
+
+Evaluation dimensions:
+
+- J = Judgement Financial Impact
+- U = Urgency & Frequency
+- L = Latency
+- I = Influence Scope
+- A = Adaptive / Learning Value
+
+---
+
+## 8.3 Evaluation Unit and Implementation Unit
+
+```text
+Evaluation unit: JP
+Implementation unit: BJ
+```
+
+---
+
+# 9. Judgement Journey (JJ)
 
 Judgement Journey (JJ) is an executed chain of JP.
 
@@ -268,7 +317,7 @@ JJ = Executed judgement chain
 
 ---
 
-# 9. JSC — Judgement State Chart
+# 10. JSC — Judgement State Chart
 
 JSC models judgement-driven state transitions.
 
@@ -299,7 +348,7 @@ JSC may also include:
 
 ---
 
-# 10. JDC — Judgement Design Canvas
+# 11. JDC — Judgement Design Canvas
 
 JDC structures judgement itself.
 
@@ -323,7 +372,7 @@ JDC makes judgement:
 
 ---
 
-# 11. JLog / VLog
+# 12. JLog / VLog
 
 JDA records judgement through two primary logs.
 
@@ -357,7 +406,7 @@ Together, JLog and VLog enable organizational judgement learning.
 
 ---
 
-# 12. Judgement Injection
+# 13. Judgement Injection
 
 Judgement Injection is a central implementation concept in JDA.
 
@@ -389,7 +438,7 @@ rather than hardcoded logic.
 
 ---
 
-# 13. Learning Cycle
+# 14. Learning Cycle
 
 JDA learning proceeds in stages.
 
@@ -437,7 +486,7 @@ However, accountability design remains essential.
 
 ---
 
-# 14. Relationship with AI
+# 15. Relationship with AI
 
 JDA is not primarily an AI adoption framework.
 
@@ -465,7 +514,7 @@ JDA prioritizes organizational judgement learning over simple automation.
 
 ---
 
-# 15. Enterprise World Model
+# 16. Enterprise World Model
 
 The long-term vision of JDA is the construction of an Enterprise World Model.
 
@@ -481,7 +530,7 @@ AI may eventually support increasingly sophisticated organizational reasoning.
 
 ---
 
-# 16. Current Direction of JDA v1.6
+# 17. Current Direction of JDA v1.6
 
 JDA v1.6 is currently organized around:
 
